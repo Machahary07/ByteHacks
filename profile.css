@@ -3,6 +3,10 @@
     background-color: #121212;
 }
 
+.card-content-inner {
+    margin-bottom: 20px;
+}
+
 .profile-card {
     width: 250px;
     padding: 20px;
