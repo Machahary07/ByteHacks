@@ -487,6 +487,7 @@ body{
     height: 45px;
     width: 45px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .cart-icon i {

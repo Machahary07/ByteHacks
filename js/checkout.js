@@ -2,7 +2,7 @@ let listCart = [];
 function checkCart(){
         var cookieValue = document.cookie
         .split('; ')
-        .find(row => row.startsWith('listCart='));
+        .find(row => row.startsWith('ArtifyCookie='));
         if(cookieValue){
             listCart = JSON.parse(cookieValue.split('=')[1]);
         }
@@ -27,7 +27,7 @@ function addCartToHTML(){
                 newCart.innerHTML = 
                     `<img src="${product.image}">
                     <div class="info">
-                        <div class="name">${product.name}</div>
+                        <div class="name">${product.title}</div>
                         <div class="price">$${product.price}/1 product</div>
                     </div>
                     <div class="quantity">${product.quantity}</div>
