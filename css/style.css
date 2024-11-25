@@ -128,7 +128,7 @@ body{
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    background: -webkit-linear-gradient(#ebf4f5, #b5c6e0 );
+    background: -webkit-linear-gradient(#ffffff, #e7e5e5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
