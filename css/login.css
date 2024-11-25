@@ -55,6 +55,35 @@ img{
 }
 
 /*===== LOGIN =====*/
+.login-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login__content {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .login{
   display: grid;
   grid-template-columns: 100%;

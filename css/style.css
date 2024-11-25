@@ -71,6 +71,7 @@ body{
     font-size: 14px;
     font-weight: 700;
     border:none;
+    cursor: pointer;
  }
  .navbar .navbar-buttons .login-button a {
     text-decoration: none;
