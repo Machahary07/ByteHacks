@@ -9,8 +9,8 @@ let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 2000;
-let timeAutoNext = 8000;
+let timeRunning = 3000;
+let timeAutoNext = 7000;
 
 nextDom.onclick = function(){
     showSlider('next');    
@@ -23,6 +23,13 @@ let runTimeOut;
 let runNextAuto = setTimeout(() => {
     next.click();
 }, timeAutoNext)
+
+function resetTimeAnimation() {
+    runningTime.style.animation = 'none'
+    runningTime.offsetHeight /* trigger reflow */
+    runningTime.style.animation = null 
+    runningTime.style.animation = 'runningTime 7s linear 1 forwards'
+}
 function showSlider(type){
     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
@@ -46,5 +53,8 @@ function showSlider(type){
     runNextAuto = setTimeout(() => {
         next.click();
     }, timeAutoNext)
+
+    resetTimeAnimation()
 }
 
+resetTimeAnimation()

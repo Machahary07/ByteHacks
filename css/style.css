@@ -37,12 +37,10 @@ body{
     position: relative;
     z-index: 100;
   }
-  .logo {
-    flex: 1;
-    text-align: left;
-    font-size: 30px;
-    padding-left: 10px;
-    font-weight: bold;
+  .logo img {
+    padding-top: 5px;
+    height: 50px;
+    border-radius: 50%;
   }
   .menu {
     flex: 2;
@@ -303,15 +301,16 @@ body{
     position: absolute;
     z-index: 1000;
     width: 0%;
-    height: 3px;
-    background-color: #f1683a;
+    height: 4px;
+    background-color: #4c3af1;
     left: 0;
     top: 0;
+    animation: runningTime 7s linear 1 forwards;
 }
 
 .carousel.next .time,
 .carousel.prev .time{
-    animation: runningTime 3s linear 1 forwards;
+    animation: runningTime 7s linear 1 forwards;
 }
 @keyframes runningTime{
     from{ width: 100%}
