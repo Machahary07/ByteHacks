@@ -8,6 +8,7 @@
     <title>ARTIFY</title>
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css">
   </head>
   <body>
     
@@ -28,7 +29,7 @@
                 </ul>
             </div>
             <div class="navbar-buttons">
-                <button class="login-button"><a href="login.html">Login</a></button>
+                <button class="login-button" id="loginBtn">Login</button>
             </div>
         </div>
             <!-- carousel -->
@@ -154,6 +155,99 @@
             <div class="time"></div>
         </div>
     </section>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login__content">
+            <div class="login__img">
+                <span class="close" id="closeModal">&times;</span>
+                <img src="images/backgroundImg2.jpg" alt="">
+            </div>
+
+            <div class="login__forms">
+                <form action="" class="login__registre" id="login-in">
+                    <h1 class="login__title">Sign In</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__forgot">Forgot password?</a>
+
+                    <a href="#" class="login__button">Sign In</a>
+
+                    <div>
+                        <span class="login__account">Don't have an Account ?</span>
+                        <span class="login__signin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+
+                <form action="" class="login__create none" id="login-up">
+                    <h1 class="login__title">Create Account</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" placeholder="Username" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+
+                    <a href="#" class="login__button">Sign Up</a>
+
+                    <div>
+                        <span class="login__account">Already have an Account ?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const loginBtn = document.getElementById('loginBtn');
+        const loginModal = document.getElementById('loginModal');
+        const closeModal = document.getElementById('closeModal');
+
+        // Show modal on button click
+        loginBtn.addEventListener('click', () => {
+            loginModal.style.display = 'flex';
+        });
+
+        // Hide modal on close click
+        closeModal.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+        });
+
+        // Hide modal on clicking outside of the modal
+        window.addEventListener('click', (e) => {
+            if (e.target === loginModal) {
+                loginModal.style.display = 'none';
+            }
+        });
+    </script>
+
     <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
