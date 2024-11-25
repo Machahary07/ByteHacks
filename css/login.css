@@ -6,9 +6,9 @@
 :root{
   /*===== Colores =====*/
   --first-color: #9D4BFF;
-  --first-color-dark: #23004D;
+  --first-color-dark: #7300ff;
   --first-color-light: #A49EAC;
-  --first-color-lighten: #F2F2F2;
+  --first-color-lighten: #000000;
 
   /*===== Font and typography =====*/
   --body-font: 'Open Sans', sans-serif;
@@ -77,11 +77,19 @@ img{
 }
 
 .close {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--first-color-dark);
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 40px;
   right: 100px;
-  font-size: 24px;
+  font-size: 50px;
   cursor: pointer;
+  color: #FFF;
 }
 
 .login{
@@ -147,7 +155,7 @@ img{
   grid-template-columns: max-content 1fr;
   column-gap: .5rem;
   padding: 1.125rem 1rem;
-  background-color: #FFF;
+  background-color: #2c2c2c;
   margin-top: 1rem;
   border-radius: .5rem;
 }
@@ -163,6 +171,7 @@ img{
   font-size: var(--normal-font-size);
   font-weight: 600;
   color: var(--first-color-dark);
+  background: none;
 }
 
 .login__input::placeholder{
@@ -279,4 +288,16 @@ img{
     bottom: -5.5rem;
   }
 }
-    
+
+.menu ul li:hover {
+  border-radius: 20px;
+  background-color: #7300ff;
+  color: #FFF;
+}
+
+.navbar .navbar-buttons .login-button:hover {
+  border-radius: 20px;
+  background-color: #7300ff;
+  color: #FFF;
+  box-shadow: #000000;
+}

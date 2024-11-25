@@ -54,7 +54,7 @@ body{
   }
   .menu ul li a {
     text-decoration: none;
-    color: #eee;
+    color: #ffffff;
     margin: 0 15px;
     
   }
@@ -419,7 +419,14 @@ body{
     background: #fff;
     color: #000;
     border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
+
+.cateogry-list .back-arrow:hover{
+    background-color: #7300ff;
+    transform: scale(1.1);
+}
+
 .cateogry-list ul li a:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -471,6 +478,12 @@ body{
     height: 45px;
     width: 45px;
     border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.profile-icon:hover {
+    background-color: #7300ff;
+    transform: scale(1.1);
 }
 
 .profile-icon img {
@@ -489,6 +502,12 @@ body{
     width: 45px;
     border-radius: 10px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    background-color: #7300ff;
+    transform: scale(1.1);
 }
 
 .cart-icon i {
@@ -588,6 +607,6 @@ body{
 
 .add-to-cart:hover {
     cursor: pointer;
-    background: #F28A16;
+    background: #7300ff;
     transform: scale(1.1);
 }
