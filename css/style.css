@@ -302,7 +302,7 @@ body{
     z-index: 1000;
     width: 0%;
     height: 4px;
-    background-color: #4c3af1;
+    background-color: #225edf;
     left: 0;
     top: 0;
     animation: runningTime 7s linear 1 forwards;
@@ -423,8 +423,9 @@ body{
 }
 
 .cateogry-list .back-arrow:hover{
-    background-color: #7300ff;
+    background-color: #4d17f0;
     transform: scale(1.1);
+    
 }
 
 .cateogry-list ul li a:hover {
@@ -482,7 +483,7 @@ body{
 }
 
 .profile-icon:hover {
-    background-color: #7300ff;
+    /* background-color: #7300ff; */
     transform: scale(1.1);
 }
 
@@ -506,7 +507,7 @@ body{
 }
 
 .cart-icon:hover {
-    background-color: #7300ff;
+    /* background-color: #7300ff; */
     transform: scale(1.1);
 }
 
@@ -607,6 +608,6 @@ body{
 
 .add-to-cart:hover {
     cursor: pointer;
-    background: #7300ff;
+    background: #192eeb;
     transform: scale(1.1);
 }
