@@ -17,7 +17,7 @@ html {
 
 body{
     margin: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: Poppins;
     font-size: 12px;
     overflow-x: hidden;
@@ -117,11 +117,11 @@ header .totalQuantity{
 }
 
 .cart .buttons .checkout{
-    background-color: #E8BC0E;
+    background-color: #7300ff;
     color: #000;
 }
 .cart h2{
-    color: #E8BC0E;
+    color: #7300ff;
     padding: 20px;
     height: 30px;
     margin: 0;
@@ -188,7 +188,7 @@ header .totalQuantity{
     padding: 20px;
 }
 .checkoutLayout .right{
-    background-color: #5358B3;
+    background-color: #000000;
     border-radius: 20px;
     padding: 40px;
     color: #fff;
@@ -197,7 +197,7 @@ header .totalQuantity{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border-bottom: 1px solid #7a7fe2;
+    border-bottom: 1px solid #7300ff;
     padding-bottom: 20px;
 }
 .checkoutLayout .form h1,
@@ -214,8 +214,8 @@ header .totalQuantity{
     border-radius: 20px;
     margin-top: 10px;
     border:none;
-    background-color: #6a6fc9;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 .checkoutLayout .right .return .row{
     display: flex;
@@ -232,7 +232,7 @@ header .totalQuantity{
     height: 40px;
     border: none;
     border-radius: 20px;
-    background-color: #49D8B9;
+    background-color: #7300ff;
     margin-top: 20px;
     font-weight: bold;
     color: #fff;

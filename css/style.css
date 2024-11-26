@@ -533,7 +533,7 @@ body{
     justify-content: space-between;
 }
 
-.cateogry, .more {
+.category, .more {
     height: 24px;
     display: flex;
     align-items: center;
@@ -543,7 +543,22 @@ body{
     padding: 10px 18px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
-.cateogry:hover, .more:hover {
+.category:hover, .more:hover {
+    cursor: pointer;
+    background: #252525;
+}
+
+.category, .more {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1B1B1B;
+    border-radius: 15px;
+    padding: 10px 18px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.category:hover, .more:hover {
     cursor: pointer;
     background: #252525;
 }
